@@ -7,20 +7,34 @@ import { AiOutlineUser, AiOutlineSearch, AiOutlineShoppingCart } from 'react-ico
 function Navbar() {
   return (
     <div className='flex items-centre justify-between'>
-     <div className='items-centre space-x-10'>
+     <div className='items-centre space-x-10 p-5' >
       <Link to='/Men'>Men</Link>
       <Link to='/Women'>Women</Link>
       <Link to='/Accessories'>Accessories</Link>
      </div>
 
-     <div className='w-60 p-5'>
+     <div className='w-60 p-3'>
       <img   src={logo} alt="logo"  />
       </div>
 
       <div className=''>
-      <AiOutlineUser className='w-100' />
-      <AiOutlineSearch className='w-100' />
-      <AiOutlineShoppingCart className='w-100' />
+      <ul className='flex flex-row space-x-10 p-5 justify-end items-center'>
+        <li>
+          <a className='cursor-pointer'>
+            <AiOutlineUser />
+          </a>
+        </li>
+        <li>
+          <a className='cursor-pointer'>
+            <AiOutlineSearch />
+          </a>
+        </li>
+        <li>
+          <a className='cursor-pointer'>
+            <AiOutlineShoppingCart />
+          </a>
+        </li>
+      </ul>
       </div>
      
     </div>
